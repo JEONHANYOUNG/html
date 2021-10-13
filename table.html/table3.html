@@ -10,22 +10,30 @@
         border-collapse: collapse;
       }
 
+      th,
       td {
-        border: 1px solid red;
+        border: 1px solid black;
       }
     </style>
   </head>
   <body>
     <table>
       <tr>
-        <!-- tr : 행 만드는거-->
-        <td>이름</td>
-        <!-- td :열 (컬럼) -->
-        <td>나이</td>
+        <th>1열</th>
+        <th>2열</th>
+        <th>3열</th>
       </tr>
       <tr>
-        <td>홍길동</td>
-        <td>35</td>
+        <td rowspan="2">1행 1열</td>
+        <!-- rowspan을 하면 병합이 가능해짐, ex) 2이면 2행-->
+        <td>1행 2열</td>
+        <td>1행 3열</td>
+      </tr>
+      <tr>
+        <td colspan="2">2행 2열</td>
+      </tr>
+      <tr>
+        <td colspan="3">3행 1열</td>
       </tr>
     </table>
   </body>

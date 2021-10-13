@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--table의 너비 설정-->
+    <!-- 가운데 정렬 : text-align: center -->
+    <!-- 너비 100, 높이 100 정렬 -->
+    <style> 
+      table {
+        border-collapse: collapse;
+        width: 500px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>영화제목</th>
+        <th>연도</th>
+        <th>감독</th>
+        <th>평가</th>
+        <th>포스터</th>
+      </tr>
+      <tr>
+          <!-- 절대 주소 넣는 법-->
+        <td><a href="https://movie.naver.com/movie/bi/mi/basic.naver?code=87309"
+            >라이프 오브 파이
+        </td>
+        <td>2013</td>
+        <td>이안</td>
+        <td>8.68</td>
+        <!-- 이미지 넣는 것은 "이미지 주소" 항목 클릭 후 복사-->
+        <td>
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAzMjlfNDQg%2FMDAxNjE3MDIwMjc5NTA4.vJmtITtO9r3L_U-7prXe07QD--l8WBNdXXZeWhQfLi4g.o1jdq2cERL8JLmtg56V3ujta3_t_d5lHCiiCFqzU2gUg.JPEG.nayahklee%2F20210328%25A3%25DF190105.jpg&type=sc960_832"
+            alt=""
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>레미제라블</td>
+        <td>2012</td>
+        <td>톰후퍼</td>
+        <td>8.28</td>
+        <td>
+          <img src="" alt="" />
+        </td>
+      </tr>
+      <tr>
+        <td>장고:분노의 추적자</td>
+        <td>2012</td>
+        <td>타란티노</td>
+        <td>8.29</td>
+        <td><img src="" alt="" /></td>
+      </tr>
+    </table>
+  </body>
+</html>
