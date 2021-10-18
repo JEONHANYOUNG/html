@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- root를 넣어주면 폰트 크기가 줄어드는 결과를 나타낼 수 있음 -->
     <style>
+      :root {
+        font-size: 12px;
+      }
       p {
         /*width: 800px; 고정크기여서 크기를 변동해도 */
         width: 70%;
@@ -21,11 +25,14 @@
         모니터용 : px(픽셀, 고정크기, 많이 사용하고 있음), em, %(상대크기)
 
         브라우저 폰트 기본 크기 : 16px
-        16px * 1.5em = 24px, ex) 16px * 2em => 16*2=> 32px 
+        :root{} => 브라우저 폰트 기본 크기를 변경 시킴
+        12px * 1.5em = 18px 
+
+        h1 => 12px * 2em = 24px
+
     -->
     <h1>css 기본문법</h1>
     <h2>사이즈</h2>
-
     <!-- p>lorem100하면 아래 처럼 나옴, 더미 텍스트를 길게 만들어주는 것, 100자 이상-->
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, culpa a

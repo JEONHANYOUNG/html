@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* a는 _(언더 바)이며 none은 _를 없앤 것 */
+      a:link {
+        text-decoration: none;
+        color: black;
+      }
+      /* 방문한 색상은 magenta 색상 */
+      a:visited {
+        color: magenta;
+      }
+      /* hover는 마우스가 다른 곳으로 갔다가 해당 링크 위에 올려두면 오렌지 색 */
+      a:hover {
+        color: orange;
+      }
+      /* 사용자가 누르면 빨간색을 표시 */
+      a:active {
+        background-color: #f00;
+      }
+      input {
+        width: 150px;
+        outline: none; /* input이 가지고 있는 테두리를 제거한 것*/
+        border: 1px solid lightgray; /* 두께, 가상 새로운 테두리를 지정한 것, 테두리색은 밝은 그레이 */
+        transition: 0.4s; /* 애니메이션 시간을 0.4초로 지정한 것 */
+        padding: 5px 10px; /* 안쪽 여백이고, 상,하는 5px, 좌,우는 10px */
+      }
+      /* focus가 중요,
+        사용자가 동작 후 디자인 변경, 
+        tab을 누르면 focus를 받고 너비는 넓히고, 테두리를 빨간색으로 지정한 것 */
+      input:focus {
+        width: 200px;
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        가상 클래스 : 사용자의 동작에 반응
+        
+        - 여러 개가 올 경우
+        : 1)link -> 2)visited -> 3)hover -> 4)active로 순서를 지켜야 함
+
+        :link => 방문하지 않은 링크에 스타일 적용
+        :visited => 방문한 링크에 스타일 적용
+        :hover => 요소에 마우스를 올려놓았을 때 스타일 적용
+        :active => 요소를 활성화했을 때 스타일 적용
+        :focus => 웹 요소에 초점이 맞춰졌을 때 스타일 적용
+
+      -->
+    <h1>가상(psedeu) 클래스 선택자</h1>
+    <ul>
+      <li><a href="" target="_blank">google</a></li>
+      <li><a href="" target="_blank">daum</a></li>
+      <li><a href="" target="_blank">naver</a></li>
+      <li><a href="http://11st.co.kr" target="_blank">11번가</a></li>
+    </ul>
+    <div>
+      <!-- 기입할 수 있는 박스가 생성됨-->
+      <input type="text" />
+    </div>
+  </body>
+</html>

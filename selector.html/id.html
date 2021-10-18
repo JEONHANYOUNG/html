@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- .color는 글자색 파란색-->
+    <!-- .line은 밑줄-->
+    <!-- .weight은 진하게-->
+    <!-- #으로 제시해야하고, ex) #color
+         id로 가면 개개인에게 색상, 라인, 무게를 제시해야함 
+         ex) #color {
+              color: blue;
+               }
+             #line {
+              color: blue;
+              text-decoration: underline; /* 밑줄 */
+              }
+             #weight {
+              color: blue;
+              text-decoration: underline;
+              font-weight: bold;
+    -->
+    <style>
+      #color {
+        color: blue;
+      }
+      #line {
+        color: blue;
+        text-decoration: underline; /* 밑줄 */
+      }
+      #weight {
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>아이디 선택자</h1>
+    <ul>
+      <!-- id는 중복된 이름은 금지 
+            ex) <li id="color">List Item1</li>
+                <li class="color line">List Item2</li> 불가
+          -->
+      <li id="color">List Item1</li>
+      <!-- .은 class, #은 id-->
+      <!-- li.color는 아래처럼 나타내줌-->
+      <li id="color">List Item1</li>
+      <!-- li.color.line는 아래처럼 나타내줌-->
+      <li id="line">List Item2</li>
+      <!-- li.color.weight는 아래처럼 나타내줌-->
+      <li id="weight">List Item3</li>
+    </ul>
+  </body>
+</html>

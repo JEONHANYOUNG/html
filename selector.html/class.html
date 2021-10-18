@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- .color는 글자색 파란색-->
+    <!-- .line은 밑줄-->
+    <!-- .weight은 진하게-->
+    <style>
+      .color {
+        color: blue;
+      }
+      .line {
+        text-decoration: underline; /* 밑줄 */
+      }
+      .weight {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>클래스 선택자</h1>
+    <ul>
+      <!-- .은 class, #은 id-->
+      <!-- .color는-->
+      <div class="color"></div>
+      <!-- #color는-->
+      <div id="" class="color"></div>
+      <!-- li.color는 아래처럼 나타내줌-->
+      <li class="color">List Item1</li>
+      <!-- li.color.line는 아래처럼 나타내줌-->
+      <li class="color line">List Item2</li>
+      <!-- li.color.weight는 아래처럼 나타내줌-->
+      <li class="color line weight">List Item3</li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- html의 전체(부모) 태그-->
+<html lang="en">
+  <!-- head와 body 자식태그-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- div안에 h2태그의 스타일 선택
+         자식으로만 표시하고 싶으면 ">" 표시
+          ex) div > h2 -->
+    <style>
+      div > h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 자식의 자손(후손, 하위) 태그-->
+    <h1>자손 선택자</h1>
+    <div>
+      <h2 id="title"></h2>
+    </div>
+    <div>
+      <h2>자손(하위) 선택자</h2>
+      <h2>자손(하위) 선택자</h2>
+    </div>
+  </body>
+</html>
