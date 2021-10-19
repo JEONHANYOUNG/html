@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* id(id="text")가 우선 순위이기 때문에 green 색상으로 보여줌, 선택자의 우선순위*/
+      #text {
+        color: green;
+      }
+      /* 원래는 밑에 있는 p의 blue가 우선순위인데 p 옆에 .area를 붙히면 red로 보여줌*/
+      .area p {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+          !important : 가장 우선시(1000점)
+          인라인 선언 : 2번째(500점) 
+          아이디 선택자 : 3번째(100점), (:hover, :link, :active)
+          클래스 선택자 : 4번째(10점), (::before, ::after) 
+          태그 선택자 : 5번째(1점)
+          전체 선택자
+          상속 선택자
+
+          :not() => 점수가 없음
+          :not(h1) => not은 안되고 괄호 안에 태그가 있기에 선택자 우선순위에 의해 결정됨
+          :not(.box)
+      -->
+    <!--.area 입력 시 -->
+    <div class="area">
+      <!-- p#id 입력 시-->
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis unde
+        magni, vero voluptatum laborum maxime, totam possimus fuga id harum
+        pariatur beatae amet dolorum obcaecati, odio officia sunt corrupti
+        dolorem.
+      </p>
+      <p id="text2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis facere
+        tempore, quam eveniet accusamus eum tempora distinctio veniam commodi,
+        pariatur id quae laborum corrupti iure unde, blanditiis accusantium?
+        Nobis, ullam.
+      </p>
+    </div>
+  </body>
+</html>
