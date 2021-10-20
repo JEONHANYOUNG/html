@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        background-color: indigo;
+        /* height: 300px;
+        width: 500px; */
+      }
+      div {
+        /* div 안에 있는 항목을 페이지 가운데로 정렬하고 싶을 때 */
+        text-align: center;
+      }
+      div a {
+        /* 인라인 요소 => width,height는 의미 없음 */
+        background-color: blue;
+        color: white;
+        text-align: none;
+        width: 40px;
+        height: 40px;
+        display: none; /* inline-block은 옆을 나열 
+                          block은 아래로 나열
+                          none을 주면 기존에 div의 값이 안보임 */
+        line-height: 40px; /* 세로 가운데 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- span : 인라인 요소(블럭 요소와의 차이점)
+         width : 0 => 0에서 시작해서 내용만큼만 / 임의 값 지정 불가 
+         height : 0 => 0에서 시작해서 내용만큼만 / 임의 값 지정 불가
+    -->
+    <span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero
+      commodi autem nulla similique aliquam nihil nobis eaque sit laboriosam,
+      culpa voluptatibus aspernatur suscipit minima neque. Sequi maiores tempore
+      quaerat!
+    </span>
+    <!-- 한 줄 씩 명시하고 싶으면 div 안에 넣으면 됨 -->
+    <div>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">4</a>
+    </div>
+  </body>
+</html>
