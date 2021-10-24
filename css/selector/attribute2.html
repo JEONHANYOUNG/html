@@ -16,35 +16,38 @@
       /* 1. 동그라미 블릿 제거 시 (1번과 2번 모두 동일)
       1).link1,
         .link2 {
-         list-style: none;
+         list-style-type: none;
         }*/
       /*
       2) [class^="link"] {
-           list-style: none;
+           list-style-type: none;
          } */
       [class^="link"] {
-        list-style: none;
+        list-style-type: none;
       }
 
       /* 2. ~로 끝나는
          color는 빈칸 안에 글자색이 빨간색,
          padding은 안쪽 여백임 (1번과 2번 모두 동일)*/
-      /* [class="fruit_name"] {
+      /* 
+      1)[class="fruit_name"] {
         color: red;
         padding: 10px;
       } */
-      /*.fruit_name {
+      /*
+      2).fruit_name {
         color: red;
         padding: 10px;
       } */
-
+      /* 글자색은 빨간색, padding 은 안쪽 여백을 10px의 공백을 준 것 */
+      /* 1), 2)과 아래의 형식이 모두 동일함*/
       [class$="name"] {
         color: red;
         padding: 10px;
       }
       /* 3. 투명도(opacity) 처리*/
       [class$="color"] {
-        color: red;
+        color: blue;
         opacity: 0.3; /* 흐리게 보이는 것은 투명도(opacity)를 설정해서 그렇게 됨 */
       }
     </style>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        /* font-size: 12px; */
+      }
+      h1 {
+        font-size: 1.5rem; /* 16px * 1.5 */
+      }
+      h2 {
+        font-size: 1.2rem; /* 16px * 1.2 */
+      }
+      p {
+        width: 70%;
+        font-size: 1.5em; /* 16px * 1.5 */
+      }
+      spanc {
+        font-size: 0.8em;
+        /* 16px * 1.5 * 0.8 => 기본적으로 속해 있는 크기(16px * 1.5)에 0.8을 곱해준 값*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>단위</h1>
+    <!--
+       인쇄용 : 인치, cm, pt
+       모니터용 : px(고정크기), em(기준 값이 있어야 함), 
+                 rem(브라우저 폰트 기본크기를 기준으로 크기를 잡는 것), %(상대크기)
+        
+        em : em 단위가 쓰여진 곳의 폰트 사이즈 배수
+        rem : 문서 기본값(16px)의 배수          
+
+       브라우저 폰트 기본 크기 : 16px(고정 값) 
+       :root{} => 브라우저 폰트 기본 크기를 변경 시킴
+       12px * 1.5 = 18px
+       
+       h1 => 12px * 2em = 24px
+       - 확인 방법으로는 인터넷 창 - f12 - computed -filter
+
+    -->
+    <h1>css 기본문법</h1>
+    <h2>사이즈</h2>
+    <!-- p안에 Lorem100 -->
+    <p>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+      Esse, officiis quos? Quas, cumque! Harum qui pariatur, illo, aliquam
+      deleniti odio id quam consequuntur cupiditate ratione deserunt? Vero qui
+      ut, sequi non distinctio error nam, eaque omnis, rem quo officiis
+      voluptate quia optio? Modi, dolore. Aperiam enim, modi recusandae
+      laboriosam dicta tempore temporibus delectus? Quidem fuga placeat suscipit
+      non, sapiente nostrum, deleniti odio ipsa voluptas, rerum necessitatibus
+      perspiciatis corrupti laudantium harum magnam. Labore necessitatibus
+      aspernatur saepe rem amet atque eligendi culpa eius harum ex possimus
+      sapiente, facere ipsam eum. Odio, porro incidunt saepe velit temporibus
+      fugit. Tempore, at delectus. Dolores, quisquam?
+    </p>
+  </body>
+</html>

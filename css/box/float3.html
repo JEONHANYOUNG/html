@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
+      .box {
+        background-color: white;
+        /* height: 50px; */
+        /* overflow: scroll; */
+      }
+      .left {
+        float: left; /*위에 띄우는 형식*/
+      }
+      .right {
+        float: right;
+      }
+      .clearfix {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- overflow : 요소의 크기 이상으로 내용이 넘쳤을 때 어떻게 해줄 것 인지? 
+         auto : 넘친 부분이 있는 경우 잘라내고 스크롤바 이용 
+         hidden : 넘친 부분을 잘라내고 보이지 않도록 함
+         scroll : 넘친 부분을 잘라내고 스크롤바를 이용하여 볼 수 있도록 함
+         visible : 넘친 부분을 자르지 않고 그대로 보여줌(default)   
+    -->
+    <div class="box">
+      <img src="../image/left-arrow.png" alt="왼쪽화살표" class="left" />
+      <img src="../image/right-arrow.png" alt="오른쪽화살표" class="right" />
+      <p class="clearfix">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, eum,
+        <!--sit inventore officiis quaerat perspiciatis sequi obcaecati hic quos in
+        facilis! Minus veritatis in nulla. Amet possimus mollitia et
+        necessitatibus, laudantium, ipsam quisquam tempora explicabo quae
+        officiis sequi alias! Quibusdam neque fugiat quisquam ullam odit ducimus
+        in impedit quam, a beatae recusandae, reiciendis distinctio officia
+        tenetur minima assumenda quasi consequuntur. At, voluptas similique
+        quas, molestias molestiae accusantium repudiandae officia nobis enim,
+        suscipit optio! Voluptas iste libero praesentium, rerum unde incidunt
+        error. Error similique, placeat dolores veniam blanditiis neque beatae
+        quaerat ipsa impedit nihil deserunt voluptatum, molestiae minus quidem!
+        Mollitia, reiciendis!-->
+      </p>
+    </div>
+  </body>
+</html>
