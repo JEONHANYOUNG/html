@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex; /* 가로 축을 기본으로 왼쪽에서 오른쪽으로 배치됨 */
+        flex-direction: row; /* flex의 방향 변환 시 사용, 
+                                row(기본, 가로를 기준) , column을 사용하면 옆이 아닌 아래로 정렬됨
+                                row-reverse를 하게 되면 순서 배열이 바뀜 */
+        flex-wrap: wrap-reverse; /* 브라우저 창 크기에 따라 container의 순서가 딸려옴
+                                    wrap-reverse는 거꾸로 진행됨 */
+        justify-content: space-around; /* <주축의 배치 방법>
+                                          flex-start(기본 모양), flex-end, center
+                                          space-around: 박스를 가운데에 놓고 앙쪽에 공백을 만들어 공간을 나눠가지는 것
+                                          space-between: 공간을 밀어 넣는 방식
+                                          space-evenly: 동등하게 배치하는 방식
+                                          ex) 주축이 x축이면 x축 기준해서 배치 */
+        border: 1px solid;
+      }
+      .container div {
+        /* 브라우저 크기에 따라 사이즈가 변경됨 */
+        width: 100px;
+        height: 100px;
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:nth-child(3) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>item1</div>
+      <div>item2</div>
+      <div>item3</div>
+    </div>
+  </body>
+</html>

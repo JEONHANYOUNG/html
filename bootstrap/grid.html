@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .col-sm {
+        background: red;
+        border: 1px solid;
+      } /*col은 똑같이 나누는 것*/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">One of three columns</div>
+        <div class="col-sm">One of three columns</div>
+        <div class="col-sm">One of three columns</div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">1 of 3</div>
+        <div class="col-6">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+      <div class="row">
+        <!-- 12 col를 기준으로 만드는 데 중간에 5col이 있으므로 
+             첫번째와 마지막에 있는 col의 합계는 7개다.(column: 열)-->
+        <div class="col">1 of 3</div>
+        <div class="col-5">2 of 3 (wider)</div>
+        <div class="col">3 of 3</div>
+      </div>
+    </div>
+  </body>
+</html>

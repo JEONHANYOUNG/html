@@ -1,0 +1,81 @@
+/* 전체 문서의 여백과 padding 0으로 지정, 요소 크기 content+padding+border*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 문서의 배경색 : rgb(9,100,160) */
+body {
+  background-color: rgb(9, 100, 160);
+}
+#container {
+  width: 320px;
+  margin: 50px auto;
+}
+/* 컨테이너 width 320px, margin 위,아래 50px, 좌,우 auto */
+
+.card {
+  position: relative; /* 본인이 배치된 자리 그대로 */
+  width: 300px;
+  height: 500px;
+  border: 1px solid #0f0f0f33;
+  background-color: #fff;
+  margin: 20px 10px;
+}
+.words {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 1720px 이상이면 카드가 한 줄에 보이기를 원함 */
+@media screen and (min-width: 1720px) {
+  #container {
+    width: 1710px;
+    margin: 50px auto;
+  }
+  /* 컨테이너 width 1710px, margin 위,아래 50px, 좌,우 auto */
+
+  .card {
+    position: relative; /* 본인이 배치된 자리 그대로 */
+    float: left;
+    width: 550px;
+    height: 250px;
+    border: 1px solid #0f0f0f33;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    width: 200px;
+    text-align: center;
+  }
+}
+
+/* 768~1719px 이상이면 각 카드는 한 줄에 보이기(사진,글자, 반응형 쿼리) */
+@media screen and (min-width 768) and (max-width 1719) {
+  #container {
+    width: 570px;
+    margin: 50px auto;
+  }
+  /* 컨테이너 width 570px, margin 위,아래 50px, 좌,우 auto */
+
+  .card {
+    position: relative; /* 본인이 배치된 자리 그대로 */
+    width: 550px;
+    height: 250px;
+    border: 1px solid #0f0f0f33;
+    background-color: #fff;
+    margin: 20px 10px;
+  }
+  .words {
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    width: 200px;
+  }
+}
